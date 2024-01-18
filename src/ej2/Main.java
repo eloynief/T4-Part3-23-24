@@ -5,13 +5,13 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//
-		int[] tabla = {2,3,4,5,6,7};
+		int[] tabla = {2,3,4,50,6,7};
 		//
 		int numMax=0;
 		//
 		numMax=sumaTabla(tabla);
 		
-		
+		System.out.println(numMax);
 		
 	}
 
@@ -19,7 +19,7 @@ public class Main {
 	public static int sumaTabla(int[] tablaEnteros) {
 		
 		//
-		int max=0;
+		int max=Integer.MIN_VALUE;
 		
 		//
 		for(int i=0;i<tablaEnteros.length;i++) {
